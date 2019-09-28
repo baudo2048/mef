@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Direction field (or slope field)</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+  * {
+	font: Helvetica;
+  }
+  </style>
+</head>
+<body>
+<div class="container" id="container">
+
+
+
+<h1>Direction field (or slope field)</h1>
+<hr/>
+
+Supponiamo di avere la seguente equazione differenziale
+
+\[
+\frac{dv}{dt}=9.8 - \frac{v}{5}
+\]
+
+Qui stiamo cercando una funzione la cui derivata prima è uguale a \( 9.8 - \frac{v}{5} \).
+
+Ancora non sappiamo qual è questa funzione (nè se esiste) ma possiamo iniziare a disegnare sul piano cartesiano
+le caratteristiche che questa funzione ha.
+
+Secondo voi \( v \) è la funzione o la variabile dipendente? Ha senso? Ma boia mondo di cosa si sta parlando?
+
+Attenzione, qui \( v \) non è la stessa cosa che dire la \( y \).
+
+Allora, proviamo a sfatare, \( v \) rappresenta una funzione. E' appunto la funzione (nella variabile \( t \) ) che stiamo cercando.
+Da dove si capisce? Io lo capisco guardando il lato sinistro dell'equazione, cioè l'operatore derivata.
+Infatti, ad esempio, nel caso classico tu ti trovi:
+
+\[
+\frac{df}{dx}
+\]
+
+Che è il simbolo per indicare la derivata prima della funzione \( f(x) \).
+
+Nel nostro caso invece:
+
+\[
+\frac{dv}{dt}
+\]
+
+E' il simbolo per indicare la derivata prima della funzione \( v(t) \).
+
+Il lato destro della:
+
+\[
+\frac{dv}{dt}=9.8 - \frac{v}{5}
+\]
+
+dovrebbe quindi scriversi come:
+
+\[
+\frac{dv}{dt}=9.8 - \frac{v(t)}{5}
+\]
+
+o addirittura:
+
+\[
+\frac{dv(t)}{dt}=9.8 - \frac{v(t)}{5}
+\]
+
+Però nei libri di testo non trovi mai questi ultimi due formalismi per non appensatire le equazioni.
+Anche noi ci atterremo a questa regola.
+
+<br/>
+<br/>
+
+Fatte queste inutili premesse per l'argomento che si sta trattando in questo maledetto topic del cazzo, torniamo a noi
+e finalmente sveliamo che cosa è il direction field o slope field e come si costruisce. Boia.
+
+Ok, proviamo, inizialmente con una descrizione e poi inserendo qualche maledizione boia di non so come si fa grafico del salcazzo.
+
+Altra inutile premessa \( dv \ne v \), chiaro? No perchè in base a quello che sto per dire potrebbe nascere qualche confusione
+per cui meglio togliermi adesso questo dente per poi andare dritti spediti al salcazzo.
+
+\( dv \) rappresenta una variazione di \( v \). Se non è chiaro no problema, ma ricorda Duke \( dv \ne v \).
+
+Altra premessa che riguarda sempre il lato destro dell'equazione considerata. Non è neanche possibile staccare la \( v \)
+dalla \( d \) al massimo si può indicare in maniera diversa come segue:
+
+\[
+\frac{d}{dt}v
+\]
+
+ma non posso separare con operazioni bovinamente algebriche \( \frac{d}{dt} \) da \( v \). O forse si? booo?
+
+Comunque.
+
+Per disegnare un benedetto direction field di un'equazione differenziale occorre disegnare su un foglio di carta (fatelo!)
+due assi cartesiani dove nelle ascisse (la linea orizzontale) ci mettiamo la variabile indipendente, nel nostro caso \( t \)
+e nelle ordinate (la linea verticale) il valore di \( v \) (\( v(t) \) ). Fatto? Non andare avanti se non lo hai fatto.
+
+
+
+Supponiamo che la nostra funzione assuma valore \( 40 \) per qualche \( t \) e cioè \( v(t) = v = 40 \).
+
+Sostituiamo solo al lato destro della nostra equazione differenziale \( 40 \) al posto di \( v \) otteniamo:
+
+\[
+\frac{dv}{dt}=9.8 - \frac{40}{5}
+\]
+
+Attenzione tutto il ragionamento contorto di un attimo fa era solo per dire che se ti dico di sostituire un valore alla funzione
+\( v \), cioè in altre parole un valore alla \( v \) che tu non mi faccia una cosa del tipo:
+
+\[
+\frac{d40}{dt}=9.8 - \frac{40}{5}!!!!!
+\]
+
+che è sbagliatissimo. Cattivo cattivo, non si fa.
+
+Bene, torniamo a noi. Stiamo supponendo che ad un certo punto la nostra funzione v assuma valore \( 40 \) e pertanto
+
+\[
+\frac{dv}{dt}=9.8 - \frac{40}{5} = 1.8
+\]
+
+otteniamo \( \frac{dv}{dt}=1.8 \), cioè stiamo dicendo che non conosciamo ancora la funzione incognita che stiamo cercando
+ma che se assume valore quaranta la sua darivata prima deve assumere valore 1.8. E qui rispolveriamo un antico magheggio.
+Che cosa è la derivata di una funzione? che significa se è maggiore di zero? che significa se è uguale a zero? che significa
+se è minore di zero? Queste sono solo righe intuitive per comprendere dei simbolini del salcazzo che stiamo per disegnare
+sul nostro piano cartesiano che abbiamo disegnato su un foglio un attimo fa (fatto vero?).
+
+Ora sul piano cartesiano di prima, indicate all'alterzza che più vi aggrada il valore \( 40 \)
+
+
+
+</div>
+</body>
+</html>
