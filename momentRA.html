@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Moment of a Random Variable</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+  * {
+	font: Helvetica;
+  }
+  </style>
+</head>
+<body>
+<div class="container" id="container">
+
+
+
+<h1>Moment of a Random Variable</h1>
+<hr/>
+Un momento. Ora vengo e mi spiego.<br/>
+
+Anzitutto possiamo avere un momento ma anche un altro momento. Sarebbe più corretto quindi parlare di momenti di una variabile aleatoria<br/>
+
+Infatti avrai visto in qualche libro first moment, second moment etc.<br/>
+
+A che serve e perchè lo capiremo in seguito, adesso concentriamoci sul che cosa è, cioè come si calcola.<br/>
+
+Cominciamo dalla terminologia, avrai sentito parlare di momento del primo ordine, secondo ordine, etc.<br/>
+
+Per calcolare il momento di una variabile aleatoria serve, come primo ingrediente,
+una cosa che descrive la nostra variabile aleatoria. Perchè serve una cosa relativa alla variabile aleatoria? Non so a cazzo. 
+Vogliamo prendere qualcosa attinente alle tribù barbariche? Che diamine! <br/>
+Allora, prediamo sta cazzo di cosa della variabile aleatoria, di solito si prende la media 
+ma si potrebbe usare anche la varianza, la covarianza, etc. <br/>
+
+Secondo ingrediente, serve sapere come si calcola qualla cosa che abbiamo preso.
+Se per esempio, abbiamo preso la media allora dobbiamo sapere come si calcola la media 
+di una variabile aleatoria. Eccola:
+\[
+E[X]=\sum_{1}^{\infty}x_ip_i
+\]
+
+Infine, calcoliamo il momento di ordine \(n\).<br/>
+di ordine \(0\) lasciamo stare.<br/>
+
+di ordine \(n\), si indica con \( E[X^n] \), e si calcola così:
+\[
+E[X^n]=\sum_{1}^{\infty}x_i^np_i
+\]
+Fine della storia.
+
+<br/>
+<br/>
+Volendo andare ancora più di sopraffino, consideriamo anche le seguenti formule.
+
+\[
+E[X-\mu]=\sum_{i=1}(x_i-\mu)^rp_i
+\]
+
+</div>
+</body>
+</html>
