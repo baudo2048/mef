@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Stationarity/Non stationarity of a time series process (stochastic process)</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+  * {
+	font: Helvetica;
+  }
+  </style>
+</head>
+<body>
+<div class="container" id="container">
+
+
+
+<h1>Stationarity/Non stationarity of a time series process (stochastic process)</h1>
+<hr/>
+Cominciamo da quest'informazione: <br/>
+<i>
+An important issue is whether a time series process is stationary, which implies that the distribution
+of the variable of interest does not depend upon time.
+</i><br/>
+Variable de chè? A primo acchitto sembrerebbe che dove prendo prendo c'è sempre la stessa distribuzione.
+Una cosa è sicura, c'è qualcosa che non cambia cioè la distribuzione del salcazzo. Prendo una serie temporale, 
+considero un suo pezzettino, cioè da un certo tempo \(t\) ad un altro certo tempo \(t\) e trovo una certa 
+distribuzione. Poi prendo un'altro pezzo della seria (al momento consideriamo solo elementi consecutivi) e
+trovo la stessa distribuzione. Evviva sta minchia!<br/><br/>
+
+unit roots??? che cazzo è?<br/><br/>
+
+Cose che dobbiamo imparare a fare, a prescindere dal cazzo di Università che frequenti:
+<ul>
+<li>Check if a series is stationary or not</li>
+<li>How to estimate the model parameters</li>
+<li>How to choose an appropriate ARIMA model</li>
+<li>Demonstrate how a univariate time series model can be used to forecast future values of an economic variable</li>
+<li>Present autoregressive conditional heteroskedasticity models that explain the variance of a series (of error terms) from its history.
+</ul>
+
+
+</div>
+</body>
+</html>
