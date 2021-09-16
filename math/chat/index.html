@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Matematica T1</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<!--   <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> -->
+  </script>
+
+
+</head>
+<body>
+<div class="container" id="container">
+
+
+
+<h1>Matematica T1</h1>
+<hr/>
+<br/><br/>
+<input type="text" id="inChat" style="width:100%" onkeyup="addChat(event)"/>
+
+
+
+<div id="chat" style="width:100%;min-height:40px; max-height: 70%"><br/></div>
+
+
+<script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+
+
+
+<script>
+function addChat(ev) {
+    if (ev.keyCode !== 13) return;
+    var inChat = document.getElementById("inChat");
+
+    var chat = document.getElementById("chat");
+
+    var text = document.createTextNode(inChat.value);
+
+    chat.append(text);
+    chat.append(document.createElement("br"));
+    chat.append(document.createElement("br"));
+
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, chat]);
+}
+
+</script>
+
+
+</body>
+</html>
